@@ -1,0 +1,36 @@
+If Split(arr(k), ",")(2) Like "??#####-##*" Or Split(arr(k), ",")(2) Like "?######-*" Then
+                                                        'If UBound(Split(Split(arr(k), ",")(2), "@")) >= 2 Then
+        If InStr(arr(k), "REP2") Then
+        
+        tstring = Split(Split(arr(k), ",")(2), "@")(0)
+        v3 = CDbl(Split(arr(k), ",")(8))
+          
+            For j = 0 To UBound(arr, 1)
+                If UBound(Split(Split(arr(j), ",")(2), "@")) >= 2 Then
+                If Split(Split(arr(j), ",")(2), "@")(0) = tstring And Split(Split(arr(j), ",")(2), "@")(2) = "REP" Then
+                    v2 = CDbl(Split(arr(j), ",")(8))
+                
+                ElseIf Split(Split(arr(j), ",")(2), "@")(0) = tstring And Not Split(Split(arr(j), ",")(2), "@")(2) Like "REP#" Then
+                    v1 = CDbl(Split(arr(j), ",")(8))
+                End If
+                End If
+            Next
+        
+        If u < 100 Then
+            Exit For
+        Else:
+            rsd = rsd(v1, v2, v3)
+        
+            If rsd > 20 Then
+                max_ = min_remove(v1, v2, v3)
+                min_ = max_remove(v1, v2, v3)
+        
+            End If
+        
+        End If
+     
+
+        End If
+    
+                                                        'End If
+    End If
