@@ -1,3 +1,19 @@
+
+
+7: initial mean
+8: initial rsd
+9: mean wout max
+10: rsd wout max
+11: mean wout min
+12: rsd wout min
+13: value removed (sample, rep, rep2 or dup, dup rep)
+14: final average used
+15: p or u  (processed or unprocessed)
+
+
+
+
+
 If Split(arr(k), ",")(2) Like "??#####-##*" Or Split(arr(k), ",")(2) Like "?######-*" Then
                                                         'If UBound(Split(Split(arr(k), ",")(2), "@")) >= 2 Then
         If InStr(arr(k), "REP2") Then
