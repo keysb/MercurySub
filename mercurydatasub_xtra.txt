@@ -1,5 +1,13 @@
 
 
+repsamples_info array
+0: LIMS ID string
+1: number of reps in run
+2: Source LIMS ID (if QC)
+3: QC y or n;qc number
+4: sample value
+5: rep value
+6: rep2 value
 7: initial mean
 8: initial rsd
 9: mean wout max
